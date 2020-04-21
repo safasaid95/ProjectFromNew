@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
-    let CLOUD_URL = "https://us-central1-cloudfuncfortoken.cloudfunctions.net/getOAuthToken"
+    let CLOUD_URL = "https://us-ce-cloudfuncfortoken.cloudfunctions.net/getOAuthToken"
 
 
 //    var googleURL: URL {
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
         var request = URLRequest(url:fileUrl)
         request.httpMethod = "POST"
-        request.addValue("Bearer ya29.c.Ks8CwQcGysvoZJeegi5bWzi_XRe-EyhsWQzJSw7SlhpCZ050LZRYmN964VGRPYvRT346xQrnHp43JRSPFiCD6ehlu5W1CCq1t3p5It-mcI7RcPdzfTLDJV6EH17ojIvP_ICMq_3BxXv-sDer5Ma8jUV3bgMlBJ5Q_of48kRK-Oe9g4x_kcQY_HRRLpp6Aage6k178RIZZfZG8Z-Wb1A9wngUPNXKlwrrQuXOZyLdP4Hb3QpW7sfkRQPeK-WWo7-ge4dH0aajrjcMpGGWsJ7RKewzUVbcpDXzvTfE9IYzY42jf8z57ssOYqFBA8krhqgFHhFYo8fYUOxvNK54jWXubxSCb_gYqMC9OTft4jFRQ0uRzxiK0-aivwY7tm705wd_-nu_-M-sfPRoMLRY9da6-N8osclycp5nAQICo8xNUhnCOJw8gU7ZTbO_k0c_8mhETQk", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer ya29.c.")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
         
