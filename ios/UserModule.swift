@@ -13,7 +13,7 @@ import SwiftyJSON
 class UserModule: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("This isDB Module");
+        print("This is UserModule");
         
     }
 }
